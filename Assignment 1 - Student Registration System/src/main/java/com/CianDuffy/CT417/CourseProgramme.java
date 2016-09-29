@@ -14,7 +14,29 @@ public class CourseProgramme {
     private DateTime endDateTime;
     private ArrayList<Module> modules;
 
-    public CourseProgramme(String nameString, String courseCodeString, DateTime startDateTime, DateTime endDateTime, ArrayList<Module> modulesArrayList) {
+    private static String defaultName = "Placeholder Name";
+    private static String defaultCourseCode = "Placeholder Course Code";
+
+    public CourseProgramme()
+    {
+        this.name = defaultName;
+        this.courseCode = defaultCourseCode;
+        this.startDateTime = new DateTime();
+        this.endDateTime = new DateTime();
+        this.modules = new ArrayList<Module>();
+    }
+
+    public CourseProgramme(String nameString, String courseCodeString)
+    {
+        this.name = nameString;
+        this.courseCode = courseCodeString;
+        this.startDateTime = new DateTime();
+        this.endDateTime = new DateTime();
+        this.modules = new ArrayList<Module>();
+    }
+
+    public CourseProgramme(String nameString, String courseCodeString, DateTime startDateTime, DateTime endDateTime, ArrayList<Module> modulesArrayList)
+    {
         this.name = nameString;
         this.courseCode = courseCodeString;
         this.startDateTime = startDateTime;
@@ -61,5 +83,39 @@ public class CourseProgramme {
 
     public void setModules(ArrayList<Module> modules) {
         this.modules = modules;
+    }
+
+    // Add and Remove Modules
+
+    public void addModule(Module newModule)
+    {
+        if (!this.modules.contains(newModule))
+        {
+            this.modules.add(newModule);
+        }
+    }
+
+    public void addModules(ArrayList<Module> newModules)
+    {
+        for(Module newModule : newModules)
+        {
+            addModule(newModule);
+        }
+    }
+
+    public void removeModule(Module removeModule)
+    {
+        if (this.modules.contains(removeModule))
+        {
+            this.modules.remove(removeModule);
+        }
+    }
+
+    public void removeModules(ArrayList<Module> removeModules)
+    {
+        for (Module removeModule : removeModules)
+        {
+            removeModule(removeModule);
+        }
     }
 }
