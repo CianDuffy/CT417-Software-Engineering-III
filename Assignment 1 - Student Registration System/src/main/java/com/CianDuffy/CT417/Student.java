@@ -4,7 +4,8 @@ import org.joda.time.DateTime;
 import org.joda.time.Period;
 
 /**
- * Created by cianduffy on 26/09/2016.
+ * Created by CianDuffy on 26/09/2016.
+ * Class that contains attributes required for students in the registration system.
  */
 public class Student {
 
@@ -67,6 +68,13 @@ public class Student {
         }
 
         return usernameString;
+    }
+
+    @Override
+    public String toString()
+    {
+        ActionManager actionManager = ActionManager.getInstance();
+        return "Name:\t" + this.name + "\tDOB:\t" + actionManager.stringFromDateTime(this.DOB) + "\tUsername:\t" + getUsername();
     }
 }
 

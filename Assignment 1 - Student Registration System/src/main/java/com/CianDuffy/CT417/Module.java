@@ -3,7 +3,8 @@ package com.CianDuffy.CT417;
 import java.util.ArrayList;
 
 /**
- * Created by cianduffy on 26/09/2016.
+ * Created by CianDuffy on 26/09/2016.
+ * Class that contains attributes required for modules in the registration system.
  */
 public class Module {
     private String name;
@@ -99,5 +100,23 @@ public class Module {
         {
             removeStudent(removeStudent);
         }
+    }
+
+    // toString
+    @Override
+    public String toString()
+    {
+        String moduleString = "\n--------------------------------------------------------------------------------\nModule Name:\t" + this.name + "\nModule Code:\t" + this.ID;
+
+        if (this.students.size() > 0)
+        {
+            moduleString += "\nStudents:";
+            for (Student student : this.students)
+            {
+                moduleString += "\n" + student.toString();
+            }
+        }
+
+        return moduleString;
     }
 }

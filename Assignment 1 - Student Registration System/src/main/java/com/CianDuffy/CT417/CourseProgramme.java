@@ -5,7 +5,8 @@ import org.joda.time.DateTime;
 import java.util.ArrayList;
 
 /**
- * Created by cianduffy on 26/09/2016.
+ * Created by CianDuffy on 26/09/2016.
+ * Class that contains attributes required for course programmes in the registration system.
  */
 public class CourseProgramme {
     private String name;
@@ -117,5 +118,22 @@ public class CourseProgramme {
         {
             removeModule(removeModule);
         }
+    }
+
+    @Override
+    public String toString()
+    {
+        String courseProgramString = "\n================================================================================\nCourse Name:\t" + this.name + "\nCourse Code:\t" + this.courseCode;
+
+        if (this.modules.size() > 0)
+        {
+            courseProgramString += "\n--------------------------------------------------------------------------------\nModules:";
+            for (Module module : this.modules)
+            {
+                courseProgramString += module.toString();
+            }
+        }
+
+        return courseProgramString;
     }
 }
