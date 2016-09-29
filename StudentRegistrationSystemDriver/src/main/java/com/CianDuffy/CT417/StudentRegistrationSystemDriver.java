@@ -85,6 +85,8 @@ public class StudentRegistrationSystemDriver
         golfCourseProgram.setEndDateTime(endDateTime);
         golfCourseProgram.addModule(openChampionshipModule);
 
-        System.out.println();
+        System.out.println(ECECourseProgram);
+        System.out.println(compSciCourseProgram);
+        System.out.println(golfCourseProgram);
     }
 }

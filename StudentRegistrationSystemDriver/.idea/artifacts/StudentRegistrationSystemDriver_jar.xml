@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="StudentRegistrationSystemDriver:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StudentRegistrationSystemDriver_jar</output-path>
+    <root id="root">
+      <element id="archive" name="StudentRegistrationSystemDriver.jar">
+        <element id="module-output" name="StudentRegistrationSystemDriver" />
+      </element>
+      <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.4" />
+      <element id="library" level="project" name="Maven: com.github.CianDuffy:CT417-Software-Engineering-III:6270c671a1" />
+    </root>
+  </artifact>
+</component>
