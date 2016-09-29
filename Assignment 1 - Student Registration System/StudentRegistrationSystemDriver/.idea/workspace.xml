@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a529655-9fe0-45fc-aed7-1a243a496c64" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Assignment 1 - Student Registration System/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Assignment 1 - Student Registration System/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/CianDuffy/CT417/StudentRegistrationSystemDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/CianDuffy/CT417/StudentRegistrationSystemDriver.java" />
-    </list>
+    <list default="true" id="6a529655-9fe0-45fc-aed7-1a243a496c64" name="Default" comment="" />
     <ignored path="StudentRegistrationSystemDriver.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -653,12 +649,12 @@
       <updated>1475084775733</updated>
       <workItem from="1475084780332" duration="3163000" />
       <workItem from="1475141861365" duration="4960000" />
-      <workItem from="1475160291225" duration="2219000" />
+      <workItem from="1475160291225" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10342000" />
+    <option name="totallyTimeSpent" value="10443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1227" height="777" extended-state="6" />
